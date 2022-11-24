@@ -6,11 +6,13 @@
 class HuffmanNodeList(list):
     def __init__(self, list) -> None:
         super().__init__(list)
+        # Ordenamos la lista
         self.sort()
 
     # Muestra la lista de nodos
     def __str__(self) -> str:
         str_to_show = ""
+        # Recorremos la lista de nodos y mostramos cada uno de ellos en una línea diferente 
         for idx, node in enumerate(self):
             str_to_show += str(idx) + "  " + node.val + "\n"
 
@@ -24,9 +26,11 @@ class HuffmanNodeList(list):
     # Al añadir un elemento a la lista la mantiene ordenada
     def append(self, node):
         super().append(node)
+        # Ordenamos la lista cada vez que añadimos un elemento
         self.sort()
 
     # Clona la lista
     def copy(self):
+        # copiar la lista para no modificar la original
         return(HuffmanNodeList(self))
 
