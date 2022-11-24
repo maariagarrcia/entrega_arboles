@@ -1,6 +1,6 @@
 # AQUI SE CREARA LA CLASE DE ARBOL DE HUFFMAN
-from HuffmanNode_Class import *
-from HuffmanNodeList_Class import *
+from HUFFMAN.HuffmanNode_Class import *
+from HUFFMAN.HuffmanNodeList_Class import *
 from binarytree import get_parent
 
 
@@ -80,7 +80,7 @@ class HuffmanTree():
                 print("   ", "Padre", self.getParent(child).val)
                 child = self.getParent(child)
             print("    Root")
-            
+
     # Devuelve el mensaje codificado
     def encoding(self, message):
         # Simplemente para cada clave (letra) el mensaje
