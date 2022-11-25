@@ -1,9 +1,9 @@
 # Adaptación arbol binario para trabajar con PokeNodes
 
-from SearchBinaryTree_Class import *
-from PokeData_Class import *
-from PokeNode_Class import *
-from PokeList_Class import *
+from .SearchBinaryTree_Class import *
+from .PokeData_Class import *
+from .PokeNode_Class import *
+from .PokeList_Class import *
 
 
 class PokeTree(SearchBinaryTree):

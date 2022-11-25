@@ -1,7 +1,7 @@
 # Trata el CSV y permite cargar una lista con los Pokemons
 
 import csv
-from PokeData_Class import *
+from .PokeData_Class import *
 
 
 class PokeDataSet(list):

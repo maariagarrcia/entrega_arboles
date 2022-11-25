@@ -1,7 +1,7 @@
 # Crear un tipo de nodo cuyos datos son datos de  tipo PokeData
 
-from PokeData_Class import *
-from SearchBinaryTree_Class import *
+from .PokeData_Class import *
+from .SearchBinaryTree_Class import *
 
 
 class PokeNode(Node):
