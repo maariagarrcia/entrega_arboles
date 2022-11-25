@@ -95,6 +95,18 @@ class SearchBinaryTree():
 
         return None
 
+    def showKeysInPreorder(self, node=None) -> list:
+        if node == None:
+            node = self.tree
+
+        return self.skp(node)
+
+    def skp(self, node: Node) -> list:
+        if node == None:
+            return []
+
+        return self.skp(node.left) + [node.accessKey] + self.skp(node.right)
+
         # Recorrido en preorden a partir de un nodo
         # Devuelve una lista "ordenada" de los nodos
         # Contar nodos de una rama
