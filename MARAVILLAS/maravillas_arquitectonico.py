@@ -1,11 +1,16 @@
-# crear clase Grafo
-# lo que queremos es crear una clase grafo con 7 maravillas
-# y que cada maravilla tenga una lista de conexiones
-# y que cada conexion tenga un peso
-# En esta clase estaran los metodos para añadir maravillas, añadir conexiones, mostrar maravillas, mostrar conexiones
-# y todos los atrtibutos que necesitemos
-# Claramente desarrollaremos un algoritmo para que se nos muestre el grafo y se printee 
-# crearemos una clase maravilla que tendrá nombre y país
+##### COMO LO HARIA ?????
+# Lo primero de todo es crear las clases necesarias,  en principio crearia la clase Grafo y maravillas aunques no es necesario 
+# crear la clase maravilla, pero yo la creo para tener un mejor control de los datos.
+
+# Lo que queremos es crear una clase grafo con 7 maravillasy que cada maravilla tenga una lista de conexiones
+# y que cada conexion tenga un peso.
+
+# En la clase Grafo estaran los metodos para añadir maravillas, añadir conexiones, mostrar maravillas, mostrar conexiones
+# y todos los atrtibutos que necesitemospara los demass apartados.
+# Claramente desarrollaremos un algoritmo para que se nos muestre el grafo y se printee con sus conexiones
+
+# Crearemos una clase maravilla que tendrá nombre y país
+
 
 class Grafo:
     def __init__(self) -> None:
@@ -18,12 +23,10 @@ class Grafo:
     def add_conexion(self, maravilla1, maravilla2):
         self.conexiones.append((maravilla1, maravilla2))
 
-   # printear las maravillas
     def print_maravillas(self):
         for maravilla in self.maravillas:
             print(maravilla)
 
-    # uso grafo no dirigido
     def print_conexiones(self):
         for conexion in self.conexiones:
             print(conexion[0],"-->", conexion[1])
