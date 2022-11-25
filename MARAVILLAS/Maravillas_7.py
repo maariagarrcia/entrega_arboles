@@ -63,4 +63,4 @@ def explicacion_7_maravillas():
 
 
 # ejecutar programa
-explicacion_7_maravillas()
+#explicacion_7_maravillas()

@@ -1,6 +1,6 @@
 from HUFFMAN import huffmann
 from POKEMON import pokemon
-from MARAVILLAS import maravillas
+from MARAVILLAS import explicacion_7_maravillas
 
 from colorama import Fore
 from menu import *
@@ -16,7 +16,7 @@ def Pokemon():
     mostrar_resultado("ejercicio 2",pokemon())
 
 def Maravillas():
-    mostrar_resultado("ejercicio 3",maravillas())
+    mostrar_resultado("ejercicio 3", explicacion_7_maravillas())
 
 def inicio_programa():
     helpers.clear()  # Limpia la terminal
@@ -24,7 +24,7 @@ def inicio_programa():
     menu.addOption("CODIFICACION DE HUFFMANN", Huffman)
     menu.addOption("POKEMON", Pokemon)
     menu.addOption("MARAVILLAS DEL MUNDO", Maravillas)
-    
+
     menu.start()
 
 inicio_programa() 
