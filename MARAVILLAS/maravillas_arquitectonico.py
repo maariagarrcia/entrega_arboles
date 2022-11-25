@@ -4,11 +4,9 @@
 # y que cada conexion tenga un peso
 # En esta clase estaran los metodos para añadir maravillas, añadir conexiones, mostrar maravillas, mostrar conexiones
 # y todos los atrtibutos que necesitemos
-# Claramente desarrollaremos un algoritmo para que se nos muestre el grafo
-
+# Claramente desarrollaremos un algoritmo para que se nos muestre el grafo y se printee 
 # crearemos una clase maravilla que tendrá nombre y país
 
-#
 class Grafo:
     def __init__(self) -> None:
         self.maravillas = []
@@ -29,21 +27,21 @@ class Grafo:
     def print_conexiones(self):
         for conexion in self.conexiones:
             print(conexion[0],"-->", conexion[1])
-            print()
     
-    # metodo para mostrar el grafo
-    def mostrar_grafo(self):
-        for maravilla in self.maravillas:
-            print(maravilla)
-            for conexion in self.conexiones:
-                if conexion[0] == maravilla:
-                    print("  ", conexion[1])
-                if conexion[1] == maravilla:
-                    print("  ", conexion[0])
 
+    # determinar si algún país tiene más de una maravilla del mismo tipo;
+    # si es así, mostrar el nombre de la maravilla y el país
 
-
-        
+    #def maravillas_pais(self):
+    #    for maravilla in self.maravillas:
+    #        for conexion in self.conexiones:
+    #            if conexion[0] == maravilla:
+    #                print("  ", conexion[1])
+#
+    #            elif conexion[1] == maravilla:
+    #                print("  ", conexion[0])
+#
+    #    
 
 
     def __repr__(self) -> str:

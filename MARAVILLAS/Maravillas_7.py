@@ -1,5 +1,5 @@
 from .maravillas_arquitectonico import *
-
+from colorama import Fore
 def explicacion_7_maravillas():
     print("7 MARAVILLAS DEL MUNDO ARQUITECTOÓONICAS")
 
@@ -49,18 +49,20 @@ def explicacion_7_maravillas():
 
  
     # mostrar maravillas
-    print("Las 7 maravillas del mundo son:")
+    print(Fore.YELLOW+"Las 7 maravillas del mundo son: "+Fore.WHITE)
     grafo.print_maravillas()
 
+    print()
 
     # mostrar conexiones
-    print("Las conexiones entre las maravillas son:")
+    print(Fore.YELLOW+"Las conexiones entre las maravillas son: "+Fore.WHITE)
     grafo.print_conexiones()
 
-    # mostrar grafo
-    print("El grafo es:")
-    grafo.mostrar_grafo()
-
+ 
+    print()
+    #maravillas_pais
+    print(Fore.YELLOW+"Paises que tienen mas de una maravilla son: "+Fore.WHITE)
+    grafo.maravillas_pais()
 
 # ejecutar programa
 #explicacion_7_maravillas()
