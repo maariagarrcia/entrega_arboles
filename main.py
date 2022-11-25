@@ -17,4 +17,4 @@ def inicio_programa():
     menu.addOption("CODIFICACION DE  HUFFMANN", Huffman)
     menu.start()
 
-inicio_programa()
+#inicio_programa()
