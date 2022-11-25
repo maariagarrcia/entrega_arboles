@@ -8,7 +8,7 @@
 
 # crearemos una clase maravilla que tendrá nombre y país
 
-# 
+#
 class Grafo:
     def __init__(self) -> None:
         self.maravillas = []
@@ -50,7 +50,6 @@ class Grafo:
         return f"Grafo({self.maravillas}, {self.conexiones})"
 
     
- 
 
   
 
