@@ -9,7 +9,6 @@ from .PokeDataSet_Class import *
 from .PokeList_Class import *
 from colorama import Fore
 
-####  AÑADIR LOS COLORES AL FINAL!!!!!
 def pokemon():
     # Cargar datos de pokemons del archivo CSV
     print()
@@ -44,7 +43,7 @@ def pokemon():
         pokeTree_tipo.insert(pk.tipo1, pk)
     for pk in pokemons:
         pokeTree_tipo.insert(pk.tipo2, pk)
-    print("  El índice se ha creado con éxito")
+    print("El índice se ha creado con éxito")
     print()
 
     # Buscando Pokemons por NÚMERO

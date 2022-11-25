@@ -17,8 +17,8 @@ def Pokemon():
 def inicio_programa():
     helpers.clear()  # Limpia la terminal
     menu = Menu("EJERCICIOS ARBOLES / GRAFOS")
-    menu.addOption("CODIFICACION DE  HUFFMANN", Huffman)
+    menu.addOption("CODIFICACION DE HUFFMANN", Huffman)
     menu.addOption("POKEMON", Pokemon)
     menu.start()
 
-inicio_programa()
+inicio_programa() 

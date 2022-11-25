@@ -33,7 +33,13 @@ class HuffmanNode(Node):
         self.val = self.calcVal()
 
     def calcVal(self) -> str:
-        return str(self.label) + "->" + str(self.weight)
+        return f'{self.label}·{self.weight:.2f}'
+        # return f'{self.label}->{self.weight:.2f}'
+
+        # Es demasiado largo para la consola por eso parecia que en el arbol habia algun error y derecha e izquierda
+        # parecia que estaban intercambiadas. :(
+            
+        # return str(self.label) + "->" + str(self.weight)
 
     def setLeft(self, node):
         self.left = node
@@ -42,5 +48,3 @@ class HuffmanNode(Node):
     def setRight(self, node):
         self.right = node
         self.calcWeight()
-
-

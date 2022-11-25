@@ -33,4 +33,3 @@ class HuffmanNodeList(list):
     def copy(self):
         # copiar la lista para no modificar la original
         return(HuffmanNodeList(self))
-

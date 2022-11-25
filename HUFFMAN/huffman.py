@@ -4,6 +4,7 @@
 # cREAREMOS UNA LISTA DE NODOS Y EL ARBOL DE HUFFMAN
 from .HuffmanTree_Class import *
 from colorama import Fore
+
 def huffmann():
     # Crear una lista de nodos
     lista_nodos = HuffmanNodeList(
@@ -21,7 +22,7 @@ def huffmann():
     print(" ", ht.codeKeys)
     print()
 
-    print(Fore.YELLOW+"> CODFICANDO "+Fore.RED+"(solo se pueden usar las claves del arbol)"+ Fore.WHITE)
+    print(Fore.YELLOW+"> CODIFICANDO "+Fore.RED+"(solo se pueden usar las claves del arbol)"+ Fore.WHITE)
     mensaje = "AFAF3331TMT"
     print(Fore.YELLOW+"  Mensaje en claro" + Fore.WHITE + "[" + mensaje + "]")
     print(Fore.YELLOW+"  Mensaje codificado "+ Fore.WHITE + "[" + ht.encoding(mensaje)+"]")
@@ -31,3 +32,4 @@ def huffmann():
     mensaje = "00111001110101011001101011110"
     print(Fore.YELLOW+"  Mensaje codificado "+ Fore.WHITE + "["+ mensaje + "]")
     print(Fore.YELLOW+"  Mensaje en claro "+ Fore.WHITE + "["+ ht.decoding(mensaje)+"]")
+

@@ -17,12 +17,12 @@ class HuffmanTree():
         self.codeKeys = {}  # Diccionario para codificar
         self.createCodeKeys()
 
-    # Permite imprimir el arboll
+    # Permite imprimir el arbol
     def __str__(self) -> str:
         return(self.tree.__str__())
 
     def createTree(self, huffmanNodeList):
-        # Hago una copia para no modificar la lista original 
+        # Hago una copia para no modificar la lista original
         hnl = huffmanNodeList.copy()
 
         # Por precaución: Ordeno el alfabeto de menor a mayor frecuencia
@@ -42,11 +42,10 @@ class HuffmanTree():
             hnl.append(new_internal_node)
 
         self.tree = hnl[0]
-    # Devuelve una lista con todos los nodos hoja del arbol
+
     def leaves(self):
         return self.tree.leaves
 
-    # Devuelve el nodo padre de un nodo 
     def getParent(self, node):
         return get_parent(self.tree, node)
 
@@ -81,7 +80,6 @@ class HuffmanTree():
                 child = self.getParent(child)
             print("    Root")
 
-    # Devuelve el mensaje codificado
     def encoding(self, message):
         # Simplemente para cada clave (letra) el mensaje
         # buscamos su valor codificado y lo añadimos al
@@ -92,7 +90,6 @@ class HuffmanTree():
 
         return codifiedMessage
 
-    # Devuelve el mensaje decodificado
     def decoding(self, codifiedMessage):
         message = ""
         parent = self.tree
@@ -103,6 +100,8 @@ class HuffmanTree():
             else:
                 child = parent.right
 
+            # Comprobar si el hijo es una hoja del arbol, es decir,
+            # comprobar que no tiene nodos por debajo.
             if (child.left == None) and (child.right == None):
                 message += child.label
                 parent = self.tree
