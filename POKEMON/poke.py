@@ -36,6 +36,7 @@ def pokemon():
     print("  El índice se ha creado con éxito")
     print()
 
+
     # Crear una arbol por TIPO de Pokemonn
     print(Fore.YELLOW+"> INDEXANDO POKEMONS POR TIPO"+Fore.WHITE)
     pokeTree_tipo = PokeTree()
