@@ -1,4 +1,4 @@
-# entrega_arboles
+# Entrega dia  25 sobre árboles y grafos
 
 Link de este repositorio: https://github.com/maariagarrcia/entrega_arboles
 
