@@ -2,6 +2,7 @@ from .maravillas_arquitectonico import *
 from colorama import Fore
 def explicacion_7_maravillas():
     print("7 MARAVILLAS DEL MUNDO ARQUITECTOÓONICAS")
+    print()
 
     # crear  un grafo de 7 maravillas
     grafo = Grafo()
@@ -47,6 +48,16 @@ def explicacion_7_maravillas():
     grafo.add_conexion(maravilla5, maravilla7)
     grafo.add_conexion(maravilla6, maravilla7)
 
+    print(Fore.YELLOW+ "** COMO LO HARIA **"+Fore.WHITE)
+    print(" Lo primero de todo es crear las clases necesarias,  en principio crearia la clase Grafo y maravillas aunque no es necesario  crear la clase maravilla, pero yo la creo para tener un mejor control de los datos.")
+    print()
+    print(" Lo que queremos es crear una clase grafo con 7 maravillasy que cada maravilla tenga una lista de conexiones y que cada conexion tenga un peso.")
+    print()
+    print(" En la clase Grafo estaran los metodos para añadir maravillas, añadir conexiones, mostrar maravillas, mostrar conexiones y todos los atrtibutos que necesitemos para los demass apartados.")
+    print()
+    print(" Claramente desarrollaremos un algoritmo para que se nos muestre el grafo y se printee con sus conexiones")
+    print()
+    print(" Crearemos una clase maravilla que tendrá nombre y país")
  
     # mostrar maravillas
     print(Fore.YELLOW+"Las 7 maravillas del mundo son: "+Fore.WHITE)
@@ -60,9 +71,8 @@ def explicacion_7_maravillas():
 
  
     print()
-    #maravillas_pais
-    print(Fore.YELLOW+"Paises que tienen mas de una maravilla son: "+Fore.WHITE)
-    grafo.maravillas_pais()
+    
+ 
 
 # ejecutar programa
 #explicacion_7_maravillas()

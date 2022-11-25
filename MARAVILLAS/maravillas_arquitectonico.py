@@ -1,17 +1,3 @@
-##### COMO LO HARIA ?????
-# Lo primero de todo es crear las clases necesarias,  en principio crearia la clase Grafo y maravillas aunques no es necesario 
-# crear la clase maravilla, pero yo la creo para tener un mejor control de los datos.
-
-# Lo que queremos es crear una clase grafo con 7 maravillasy que cada maravilla tenga una lista de conexiones
-# y que cada conexion tenga un peso.
-
-# En la clase Grafo estaran los metodos para añadir maravillas, añadir conexiones, mostrar maravillas, mostrar conexiones
-# y todos los atrtibutos que necesitemospara los demass apartados.
-# Claramente desarrollaremos un algoritmo para que se nos muestre el grafo y se printee con sus conexiones
-
-# Crearemos una clase maravilla que tendrá nombre y país
-
-
 class Grafo:
     def __init__(self) -> None:
         self.maravillas = []
